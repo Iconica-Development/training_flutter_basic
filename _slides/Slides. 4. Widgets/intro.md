@@ -16,7 +16,7 @@
 - Statefull Widgets
     - Mutable Statefull Objects
     - createState override
-- Inherted Widgets
+- Inherited Widgets
     - Prevent state chaining
     - MediaQuery/Navigator/Theme and more
     - Widget.of(context).currentState..
@@ -69,7 +69,7 @@ Widgets with a state counterpart
 ---
 ### Statefull Widget example
 
-```
+```dart
 class Bird extends StatefulWidget {
   const Bird({
     Key key, this.color: const Color(0xFFFFE306), this.child,
@@ -97,8 +97,8 @@ class _BirdState extends State<Bird> {
 ---
 <!-- .slide: data-background="url('images/demo.jpg')" --> 
 <!-- .slide: class="lab" -->
-## Demo time!
-Demo 2. Statefull Widgets
+> ## Demo time!
+> Demo 2. Statefull Widgets
 
 ---
 ### GlobalKeys
@@ -111,7 +111,7 @@ GlobalKeys give access to StateObject API
 
 ---
 ### GlobalKey Example
-```
+```dart
 class AppWidget extends StatefulWidget {
 	@override State createState() => AppWidgetState();
 }
@@ -132,8 +132,8 @@ class AppWidgetState extends State<AppWidget> {
 ---
 <!-- .slide: data-background="url('images/demo.jpg')" --> 
 <!-- .slide: class="lab" -->
-## Demo time!
-Demo 3. GlobalKeys
+> ## Demo time!
+> Demo 3. GlobalKeys
 
 ---
 ### Inherited Widgets
@@ -142,6 +142,7 @@ Data and manipulation API can become unmanagable
 - Each Widget passes state further down the tree
 - What if a child moves to another subtree?
 
+---
 Answer: Inherited Widgets
 
 ---

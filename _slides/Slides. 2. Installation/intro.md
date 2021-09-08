@@ -56,4 +56,4 @@ Demo. Flutter startup
 ---
 <!-- .slide: data-background="url('images/lab2.jpg')" --> 
 <!-- .slide: class="lab" -->
-## Lab time!
+> ## Lab time!

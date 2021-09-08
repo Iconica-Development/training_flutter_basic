@@ -93,11 +93,11 @@ dependencies:
 ### Flutter commands
 Other flutter commands
 ```
-$ flutter packages get
+$ flutter pub get
 ```
 Checks your environment and displays a report to the terminal window
 ```
-$ flutter packages upgrade
+$ flutter pub upgrade
 ```
 Will retrieve the highest available version of the package
 ```
@@ -121,8 +121,8 @@ Quickly iterate on a screen deeply nested in your app
 ---
 <!-- .slide: data-background="url('images/demo.jpg')" --> 
 <!-- .slide: class="lab" -->
-## Demo time!
-Demo 2. Hot Reload
+> ## Demo time!
+> Demo 2. Hot Reload
 
 ---
 ### Performance
@@ -149,12 +149,6 @@ The virtual DOM is immutable and needs to be rebuilt every frame - so 60 times p
 The app being in control of the renderer gives it more potential for controlling animations
 
 ---
-<!-- .slide: data-background="url('images/demo.jpg')" --> 
-<!-- .slide: class="lab" -->
-## Demo time!
-Demo 2. Hot Reload
-
----
 <!-- .slide: data-background="url('images/lab2.jpg')" --> 
 <!-- .slide: class="lab" -->
-## Lab time!
+> ## Lab time!
