@@ -50,6 +50,18 @@ Diagram the Layout
 - Padding, alignment or borders needed?
 
 ---
+### Practise #1
+<div>
+<img style="height:80vh;margin-left:20px;" src="images/appshell-layout-example.png">
+</div>
+
+---
+### Practise #2
+<div>
+<img style="height:80vh;margin-left:20px;" src="images/uo-layout-example.png">
+</div>
+
+---
 ### Design from bottom up
 <div style="text-align:top;display:flex;justify-content:center;">
 <img style="height:20vh;margin-left:20px;" src="images/layout3.png">
