@@ -395,7 +395,6 @@ list.forEach((item) {
 });
 ```
 *note the difference in syntax*
----
 
 ---
 ### Specific Dart operators
@@ -433,10 +432,11 @@ The code that follows the .. operates on this selector object, ignoring subseque
 
 *Strictly speaking, the “double dot” notation for cascades is not an operator. It’s just part of the Dart syntax*
 
-<!-- .slide: data-background="url('images/demo.jpg')" --> 
-<!-- .slide: class="lab" -->
+---
 > ## Demo time!
 > Demo 2. Hot Reload
+<!-- .slide: data-background="url('images/demo.jpg')" --> 
+<!-- .slide: class="lab" -->
 
 ---
 <!-- .slide: data-background="url('images/lab2.jpg')" --> 
