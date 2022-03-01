@@ -6,7 +6,7 @@
 - A SDK that makes building high-performing, modern and beautiful apps easy
 - Works for both Android and iOS
 - An open-source toolkit, developed by Google*
-- 100+ contributions from the open source community
+- 1000+ contributions from the open source community
 
 https://www.linkedin.com/pulse/cross-platform-mobile-app-development-flutter-xamarin-korhan-bircan
 

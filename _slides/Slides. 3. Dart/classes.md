@@ -15,12 +15,10 @@
 ```dart
 var jsonData = jsonDecode('{"x":1, "y":2}');
 // Create a Point using Point().
-var p1 = new Point(2, 2);
+var p1 = Point(2, 2);
 // Create a Point using Point.fromJson().
-var p2 = new Point.fromJson(jsonData);
+var p2 = Point.fromJson(jsonData);
 ```
-
-*Dart 2: You can omit the new before the constructor*
 
 ---
 ### Objects and members
