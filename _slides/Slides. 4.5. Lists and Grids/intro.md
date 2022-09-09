@@ -16,15 +16,15 @@
 ---
 ### Basic Listview
 ```
-new ListView(
+ListView(
   children: <Widget>[
-    new ListTile(
-      leading: new Icon(Icons.map),
-      title: new Text('Map'),
+    ListTile(
+      leading: Icon(Icons.map),
+      title: Text('Map'),
     ),
-    new ListTile(
-      leading: new Icon(Icons.photo_album),
-      title: new Text('Album'),
+    ListTile(
+      leading: Icon(Icons.photo_album),
+      title: Text('Album'),
     ),
     ....
   ],
@@ -37,11 +37,11 @@ new ListView(
 - ListView.builder
 
 ```
-new ListView.builder(
+ListView.builder(
   itemCount: items.length,
   itemBuilder: (context, index) {
-    return new ListTile(
-      title: new Text('${items[index]}'),
+    return ListTile(
+      title: Text('${items[index]}'),
     );
   },
 );
@@ -50,11 +50,11 @@ new ListView.builder(
 ### Basic ListView
 - Different items in the list
 ```
-final items = new List<ListItem>.generate(
+final items = List<ListItem>.generate(
   1200,
   (i) => i % 6 == 0
-      ? new HeadingItem("Heading $i")
-      : new MessageItem("Sender $i", "Message body $i"),
+      ? HeadingItem("Heading $i")
+      : MessageItem("Sender $i", "Message body $i"),
 );
 ```
 
@@ -62,11 +62,11 @@ final items = new List<ListItem>.generate(
 ### Gridview
 Gridview display data in a grid
 ```
-new GridView.count(
+GridView.count(
   crossAxisCount: 2,
-  children: new List.generate(100, (index) {
-    return new Center(
-      child: new Text(
+  children: List.generate(100, (index) {
+    return Center(
+      child: Text(
         'Item $index',
         style: Theme.of(context).textTheme.headline,
       ),
@@ -87,15 +87,15 @@ Steps:
 ### TabBar
 
 ```
-new DefaultTabController(
+DefaultTabController(
   length: 3,
-  child: new Scaffold(
-    appBar: new AppBar(
-      bottom: new TabBar(
+  child: Scaffold(
+    appBar: AppBar(
+      bottom: TabBar(
         tabs: [
-          new Tab(icon: new Icon(Icons.directions_car)),
-          new Tab(icon: new Icon(Icons.directions_transit)),
-          new Tab(icon: new Icon(Icons.directions_bike)),
+          Tab(icon: Icon(Icons.directions_car)),
+          Tab(icon: Icon(Icons.directions_transit)),
+          Tab(icon: Icon(Icons.directions_bike)),
         ],
       ),
     ),
@@ -109,11 +109,11 @@ Create content for each tab
 Note: Order is important and must correspond to the order of the tabs in the  TabBar!
 
 ```
-body: new TabBarView(
+body: TabBarView(
   children: [
-    new Icon(Icons.directions_car),
-    new Icon(Icons.directions_transit),
-    new Icon(Icons.directions_bike),
+    Icon(Icons.directions_car),
+    Icon(Icons.directions_transit),
+    Icon(Icons.directions_bike),
   ],
 );
 ```

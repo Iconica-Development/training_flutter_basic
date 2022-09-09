@@ -10,13 +10,13 @@
 Setting up the container
 ```
 ...
-final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
+final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 ...
- body: new Container(
-        padding: new EdgeInsets.all(20.0),
-        child: new Form(
+ body: Container(
+        padding: EdgeInsets.all(20.0),
+        child: Form(
           key: this._formKey,
-          child: new ListView(
+          child: ListView(
             children: <Widget>[
               // We will add fields here.
             ],
@@ -31,33 +31,33 @@ final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
 Implementing the form
 ```
  children: <Widget>[
-    new TextFormField(
+    TextFormField(
     keyboardType: TextInputType.emailAddress, // Use email input type for emails.
-    decoration: new InputDecoration(
+    decoration: InputDecoration(
         hintText: 'you@example.com',
         labelText: 'E-mail Address'
     )
     ),
-    new TextFormField(
+    TextFormField(
     obscureText: true, // Use secure text for passwords.
-    decoration: new InputDecoration(
+    decoration: InputDecoration(
         hintText: 'Password',
         labelText: 'Enter your password'
     )
     ),
-    new Container(
+    Container(
         width: screenSize.width,
-        child: new RaisedButton(
-            child: new Text(
+        child: RaisedButton(
+            child: Text(
             'Login',
-            style: new TextStyle(
+            style: TextStyle(
                 color: Colors.white
             ),
             ),
             onPressed: () => null,
             color: Colors.blue,
         ),
-        margin: new EdgeInsets.only(
+        margin: EdgeInsets.only(
             top: 20.0
         ),
         )
@@ -89,9 +89,9 @@ To validate form entries, use the _formKey...
 - Validate method calls of Form calls each FormFields validator
 - Save method calls each FormFields.onSave function
 ```
-new TextFormField(
+TextFormField(
     obscureText: true, // Use secure text for passwords.
-    decoration: new InputDecoration(
+    decoration: InputDecoration(
         hintText: 'Password',
         labelText: 'Enter your password'
     ),

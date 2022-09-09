@@ -9,7 +9,7 @@
 
 ---
 ### Constructing objects
-- use the new keyword with a constructor for a class 
+- calling the class as a function or using a named / factory constructor
 - constructor names can be ClassName or ClassName.identifier
 
 ```dart
@@ -34,8 +34,14 @@ p?.y = 4;
 
 ---
 ### Constant constructors
-To create a compile-time constant using a constant constructor, use const instead of new:
+To create a compile-time constant using a constant constructor, use const:
 
 ```dart
 var p = const ImmutablePoint(2, 2);
 ```
+
+---
+### Enums
+Enums are constants with a internal unique index represented by an identifier.
+
+By default enums are consistent

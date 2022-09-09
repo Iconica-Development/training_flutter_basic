@@ -4,7 +4,7 @@
 ---
 ### Navigation
 
-Most apps contain several screens for displaying different types of information. For example, we might have a screen that shows products. Our users could then tap on a product to get more information about it on a new screen.
+Most apps contain several screens for displaying different types of information. For example, we might have a screen that shows products. Our users could then tap on a product to get more information about it on a screen.
 
 Screens
 - Android calls them Activities. 
@@ -15,7 +15,7 @@ Screens
 ### Navigate between screens
 Use a Navigator Widget
 
-- Navigator.push shows a new screen
+- Navigator.push shows a screen
 - Navigator.pop returns to the last shown screen
 
 ---
@@ -29,7 +29,7 @@ Navigator Push
 onPressed: () {
   Navigator.push(
     context,
-    new MaterialPageRoute(builder: (context) => new SecondScreen()),
+    MaterialPageRoute(builder: (context) => SecondScreen()),
   );
 }
 ```
@@ -51,17 +51,16 @@ Example of a custom transition between pages
 ```
 class HorizontalSlidingPageRoute<T> extends MaterialPageRoute<T> {
   HorizontalSlidingPageRoute({
-    WidgetBuilder builder,
-    RouteSettings settings: const RouteSettings(),
-    maintainState: true,
-  })
-    : super(builder: builder, settings: settings, maintainState: maintainState);
+    super.builder,
+    super.settings,
+    super.maintainState,
+  });
 
   @override
   Widget buildTransitions(BuildContext context, Animation<double> animation,
     Animation<double> forwardAnimation, Widget child) {
-    return new SlideTransition(
-      position: new Tween( begin: const Offset(1.0, 0.0), end: const Offset(0.0, 0.0),
+    return SlideTransition(
+      position: Tween( begin: const Offset(1.0, 0.0), end: const Offset(0.0, 0.0),
   ).animate(animation), child: child,  );
   }
 }

@@ -12,10 +12,10 @@
 ---
 ### Dart offers
 
-- Single codebase for Android and iOS
+- Single codebase for Any platform
 - Rapid development cycles
 - Great tooling
-- Standard libraries maintained by Google
+- Standard libraries maintained by Google and the open source community
 
 ---
 ### Dart is for
@@ -87,8 +87,10 @@ The type of the name variable is dynamic
 
 Uninitialized variables have an initial value of null. Even variables with numeric types.
 
+```dart
 int lineCount;
 assert(lineCount == null);
+```
 
 Since dart 2.12, variables cannot be null unless they are explicitly marked as nullable.
 
@@ -116,7 +118,7 @@ const double atm = 1.01325 * bar; // Standard atmosphere
 
 Since dart 2.12, final variables that are non-nullable have to be instantiated when defined or provided by the constructor.
 
-A new keyword 'late' has been added to allow initialization of a final non-nullable field.
+A keyword 'late' has been added to allow initialization of a final non-nullable field.
 ```dart
 late final int lineCount; // this is not yet instantiated
 
@@ -232,7 +234,7 @@ var nobleGases = {
 
 ---
 ### Storing and getting values
-Add a new key-value pair:
+Add a key-value pair:
 
 ```dart
 var gifts = {'first': 'partridge'};
@@ -280,8 +282,8 @@ print(clapping);
 print(clapping.codeUnits); 
 print(clapping.runes.toList());
 
-Runes input = new Runes('\u2665 \u{1f605}');
-print(new String.fromCharCodes(input));
+Runes input = Runes('\u2665 \u{1f605}');
+print(String.fromCharCodes(input));
 ```
 
 ---
@@ -418,10 +420,10 @@ b ??= value;
 Allow you to make a sequence of operations on the same object
 
 ```dart
-final addressBook = (new AddressBookBuilder()
+final addressBook = (AddressBookBuilder()
       ..name = 'jenny'
       ..email = 'jenny@example.com'
-      ..phone = (new PhoneNumberBuilder()
+      ..phone = (PhoneNumberBuilder()
             ..number = '415-555-0100'
             ..label = 'home')
           .build())
@@ -434,7 +436,7 @@ The code that follows the .. operates on this selector object, ignoring subseque
 
 ---
 > ## Demo time!
-> Demo 2. Hot Reload
+> Demo 2. Let's write a dart program!
 <!-- .slide: data-background="url('images/demo.jpg')" --> 
 <!-- .slide: class="lab" -->
 

@@ -26,10 +26,10 @@
 
 ---
 ### Flutter IDE
-- Android Studio, version 3.0 or later.
+- Android Studio, version 2020.3.1 (Arctic Fox) or later
     - Flutter Plugin (run debug, hot reload)
     - Dart Plugin (code validation)
-- VS Code, version 1.20.1 or later.
+- VS Code, latest version
     - Dart code extension
     - Flutter extension
 
@@ -39,11 +39,13 @@ Validate: Flutter doctor from terminal
 ### Flutter test drive 
 
 Terminal
-```js
-flutter create
+```sh
+flutter create <name>
+
+flutter create --template=[skeleton/package/plugin] --org=nl.iconica.test <name>
 ```
-```js
-flutter run
+```sh
+flutter run [-d=<device-id>]
 ```
 
 Or use the installed IDE plugins

@@ -23,9 +23,9 @@ Material Widgets will use these Themes
 Creating an app theme
 
 ```
-new MaterialApp(
+MaterialApp(
   title: title,
-  theme: new ThemeData(
+  theme: ThemeData(
     brightness: Brightness.dark,
     primaryColor: Colors.lightBlue[800],
     accentColor: Colors.cyan[600],
@@ -37,14 +37,14 @@ new MaterialApp(
 ### Theming
 Theme for part of an application
 ```
-new Theme(
-  // Create a unique theme with "new ThemeData"
-  data: new ThemeData(
+Theme(
+  // Create a unique theme with "ThemeData"
+  data: ThemeData(
     accentColor: Colors.yellow,
   ),
-  child: new FloatingActionButton(
+  child: FloatingActionButton(
     onPressed: () {},
-    child: new Icon(Icons.add),
+    child: Icon(Icons.add),
   ),
 );
 ```
@@ -53,12 +53,12 @@ new Theme(
 ### Theming
 Extending the parent theme
 ```
-new Theme(
+Theme(
   // Find and Extend the parent theme using "copyWith". 
   data: Theme.of(context).copyWith(accentColor: Colors.yellow),
-  child: new FloatingActionButton(
+  child: FloatingActionButton(
     onPressed: null,
-    child: new Icon(Icons.add),
+    child: Icon(Icons.add),
   ),
 );
 ```
@@ -67,9 +67,9 @@ new Theme(
 ### Theming
 Using a theme
 ```
-child: new Container(
+child: Container(
   color: Theme.of(context).accentColor,
-  child: new Text(
+  child: Text(
     'Text with a background color',
     style: Theme.of(context).textTheme.title,
   ),
@@ -80,9 +80,9 @@ child: new Container(
 ### Orientation changes
 Use  OrientationBuilder widget
 ```
-new OrientationBuilder(
+OrientationBuilder(
   builder: (context, orientation) {
-    return new GridView.count(
+    return GridView.count(
       // Create a grid with 2 columns in portrait mode, or 3 columns in
       // landscape mode.
       crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
@@ -121,11 +121,11 @@ flutter:
 ### Custom Fonts
 Use a theme to declare the custom font
 ```
-new MaterialApp(
+MaterialApp(
   title: 'Custom Fonts',
   // Set Raleway as the default app font
-  theme: new ThemeData(fontFamily: 'Raleway'),
-  home: new MyHomePage(),
+  theme: ThemeData(fontFamily: 'Raleway'),
+  home: MyHomePage(),
 );
 ```
 
@@ -133,9 +133,9 @@ new MaterialApp(
 ### Custom Fonts
 Use the font on a specific widget
 ```
-new Text(
+Text(
   'Roboto Mono sample',
-  style: new TextStyle(fontFamily: 'RobotoMono'),
+  style: TextStyle(fontFamily: 'RobotoMono'),
 );
 ```
 
@@ -220,10 +220,10 @@ On devices with a device pixel ratio of 1.8, the asset .../2.0x/my_icon.png woul
 ```
 Widget build(BuildContext context) {
   // ...
-  return new DecoratedBox(
-    decoration: new BoxDecoration(
-      image: new DecorationImage(
-        image: new AssetImage('graphics/background.png'),
+  return DecoratedBox(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage('graphics/background.png'),
         // ...
       ),
       // ...
@@ -249,7 +249,7 @@ Inside my_icons package
 Then use it
 ```
     ...
-    new AssetImage('icons/heart.png', package: 'my_icons')
+    AssetImage('icons/heart.png', package: 'my_icons')
     ...
 ```
 

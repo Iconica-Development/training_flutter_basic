@@ -4,7 +4,7 @@
 ### What is Flutter
 
 - A SDK that makes building high-performing, modern and beautiful apps easy
-- Works for both Android and iOS
+- Works for Android, iOS, MacOS, Windows, Linux and Fuchsia (Beta)
 - An open-source toolkit, developed by Google*
 - 1000+ contributions from the open source community
 
@@ -12,7 +12,7 @@ https://www.linkedin.com/pulse/cross-platform-mobile-app-development-flutter-xam
 
 ---
 ### Who is Flutter for?
-- *Designers* converge on a brand-driven experience on Android and iOS
+- *Designers* converge on a brand-driven experience on any platform, regardless of the specific design language
 - *Prototypers* enjoy a high-fidelity and fast way to build working prototypes. 
 - *Developers* benefit from fantastic developer tools, an easy-to-use language, a rich set of widgets and great IDE support. Flutter frees up valuable time for working on features and delightful experiences.
 
@@ -30,13 +30,13 @@ Flutter has a design oriented development flow
 ---
 ### What you see here
 <div style="text-align:top;display:flex;justify-content:center;">
-<img style="height:80vh;margin-left:20px;" src="images/layout.png">
+<img style="height:60vh;margin-left:20px;" src="images/layout.png">
 </div>
 
 ---
 ### Could be explained as
 <div style="text-align:top;display:flex;justify-content:center;">
-<img style="height:80vh;margin-left:20px;" src="images/layout2.png">
+<img style="height:60vh;margin-left:20px;" src="images/layout2.png">
 </div>
 
 ---
@@ -52,18 +52,18 @@ Diagram the Layout
 ---
 ### Practise #1
 <div>
-<img style="height:80vh;margin-left:20px;" src="images/appshell-layout-example.png">
+<img style="height:60vh;margin-left:20px;" src="images/appshell-layout-example.png">
 </div>
 
 ---
 ### Practise #2
 <div>
-<img style="height:80vh;margin-left:20px;" src="images/uo-layout-example.png">
+<img style="height:60vh;margin-left:20px;" src="images/uo-layout-example.png">
 </div>
 
 ---
 ### Design from bottom up
-<div style="text-align:top;display:flex;justify-content:center;">
+<div style="text-align:top;display:inline-block;">
 <img style="height:20vh;margin-left:20px;" src="images/layout3.png">
 <img style="height:20vh;margin-left:20px;" src="images/layout4.png">
 </div>

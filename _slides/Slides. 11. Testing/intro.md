@@ -55,16 +55,16 @@ dev_dependencies:
 ```
 void main() {
   testWidgets('my first widget test', (WidgetTester tester) async {
-    var sliderKey = new UniqueKey();
+    var sliderKey = UniqueKey();
     var value = 0.0;
     // Tells the tester to build a UI based on the widget tree passed to it
     await tester.pumpWidget(
-      new StatefulBuilder(
+      StatefulBuilder(
         builder: (BuildContext context, StateSetter setState) {
-          return new MaterialApp(
-            home: new Material(
-              child: new Center(
-                child: new Slider(
+          return MaterialApp(
+            home: Material(
+              child: Center(
+                child: Slider(
                   key: sliderKey,
                   value: value,
                   onChanged: (double newValue) {
@@ -87,17 +87,20 @@ void main() {
 ### Testing
 Integration testing
 
-use 
-- a command-line tool flutter drive
-- a package package:flutter_driver (API)
+use the 
+- integration_test 
+- flutter_test packages 
+
+to write integration tests
 
 ```
 dev_dependencies:
-  flutter_driver:
+  integration_test:
+    sdk: flutter
+  flutter_test:
     sdk: flutter
 ```
-
-- call enableFlutterDriverExtension().
+Create a new directory, integration_test, with an empty app_test.dart file
 
 Together, the two allow you to:
 - create instrumented app for integration testing

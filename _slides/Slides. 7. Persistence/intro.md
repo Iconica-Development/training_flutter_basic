@@ -65,10 +65,10 @@ Manually store and read widget state (2)
 ### PageStorage Keys
 Example
 ```
-new TabBarView(
+TabBarView(
   children: myTabs.map((Tab tab) {
-    new MyScrollableTabView(
-      key: new PageStorageKey<String>(tab.text), // like 'Tab 1'
+    MyScrollableTabView(
+      key: PageStorageKey<String>(tab.text), // like 'Tab 1'
       tab: tab,
    ),
  }),
@@ -102,12 +102,12 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  runApp(new MaterialApp(
-    home: new Scaffold(
-      body: new Center(
-      child: new RaisedButton(
+  runApp(MaterialApp(
+    home: Scaffold(
+      body: Center(
+      child: RaisedButton(
         onPressed: _incrementCounter,
-        child: new Text('Increment Counter'),
+        child: Text('Increment Counter'),
         ),
       ),
     ),
@@ -173,7 +173,7 @@ Future<String> get _localPath async {
 
 Future<File> get _localFile async {
   final path = await _localPath;
-  return new File('$path/counter.txt');
+  return File('$path/counter.txt');
 }
 ```
 
@@ -362,7 +362,7 @@ class Post {
   Post({this.id, this.title});
 
   factory Post.fromJson(Map<String, dynamic> json) {
-    return new Post(
+    return Post(
       id: json['id'],
       title: json['title'],
     );
@@ -378,7 +378,7 @@ Future<Post> fetchPost() async {
   final response = await http.get('https://jsonplaceholder.typicode.com/posts/1');
   final responseJson = json.decode(response.body); 
   
-  return new Post.fromJson(responseJson); 
+  return Post.fromJson(responseJson); 
 }
 ```
 
@@ -386,16 +386,16 @@ Future<Post> fetchPost() async {
 ###  Restfull services
 Step 5. Use the FutureBuilder Widget
 ```
-new FutureBuilder<Post>(
+FutureBuilder<Post>(
   future: fetchPost(),
   builder: (context, snapshot) {
     if (snapshot.hasData) {
-      return new Text(snapshot.data.title);
+      return Text(snapshot.data.title);
     } else if (snapshot.hasError) {
-      return new Text("${snapshot.error}");
+      return Text("${snapshot.error}");
     }
     // By default, show a loading spinner
-    return new CircularProgressIndicator();
+    return CircularProgressIndicator();
   },
 );
 ```

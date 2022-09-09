@@ -85,7 +85,7 @@ What about events? BatteryCharging event?
 
 ```
 final EventChannel eventChannel =
-        new EventChannel(registrar.messenger(), "plugins.flutter.io/charging");
+        EventChannel(registrar.messenger(), "plugins.flutter.io/charging");
 eventChannel.setStreamHandler(instance);
 ```
 
@@ -99,7 +99,7 @@ eventChannel.setStreamHandler(instance);
     registrar
         .context()
         .registerReceiver(
-            chargingStateChangeReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+            chargingStateChangeReceiver, IntentFilter(Intent.ACTION_BATTERY_CHANGED));
   }
   ```
 
@@ -109,7 +109,7 @@ Use the events stream to call back to flutter..
 
 ```
 private BroadcastReceiver createBroadCastReceiver(final EventSink events) {
-    return new BroadcastReceiver() {
+    return BroadcastReceiver() {
       @Override
       public void onReceive(Context context, Intent intent) {
         int status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
@@ -137,7 +137,7 @@ class Battery {
     if (_instance == null) {
       final EventChannel eventChannel =
           const EventChannel('plugins.flutter.io/charging');
-      _instance = new Battery.private(..., eventChannel);
+      _instance = Battery.private(..., eventChannel);
     }
     return _instance;
   }

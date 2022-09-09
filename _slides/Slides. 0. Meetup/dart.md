@@ -54,7 +54,7 @@ class Name {
   final String last;
   factory Name(String name) {
     var parts = name.split(' ');
-    return new Name._(parts[0], parts[1]);
+    return Name._(parts[0], parts[1]);
   }
   Name._(this.first, this.last);
 }

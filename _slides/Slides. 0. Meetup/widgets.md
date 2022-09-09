@@ -78,7 +78,7 @@ class Bird extends StatefulWidget {
   }) : super(key: key);
   final Color color;
   final Widget child;
-  _BirdState createState() => new _BirdState();
+  _BirdState createState() => _BirdState();
 }
 
 class _BirdState extends State<Bird> {
@@ -87,9 +87,9 @@ class _BirdState extends State<Bird> {
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
+    return Container(
       color: widget.color,
-      transform: new Matrix4.diagonal3Values(_size, _size, 1.0),
+      transform: Matrix4.diagonal3Values(_size, _size, 1.0),
       child: widget.child,
     );
   }
