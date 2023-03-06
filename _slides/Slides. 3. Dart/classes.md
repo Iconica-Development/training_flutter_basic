@@ -44,4 +44,34 @@ var p = const ImmutablePoint(2, 2);
 ### Enums
 Enums are constants with a internal unique index represented by an identifier.
 
-By default enums are consistent
+By default enums are nothing more than a set of names. 
+However, enhanced enums can be used to add logic and additional properties. 
+
+```dart
+
+enum WeekDay {
+    monday(0, 'Droopy'),
+    tuesday(1, 'Focus'),
+    wednesday(2, 'Motivated'),
+    thursday(3, 'Sleepy'),
+    friday(4, 'Party'),
+    saturday(5, 'Recharge'),
+    sunday(6, 'Existential Dread');
+
+    final int dayNumber;
+    final String mood;
+
+    WeekDay(
+        this.dayNumber,
+        this.mood,
+    );
+    
+    int howLongUntilTheWeekend() {
+        if (dayNumber < WeekDay.saturday.dayNumber) {
+            return 5 - dayNumber;
+        }
+        return 0;
+    }
+}
+
+```

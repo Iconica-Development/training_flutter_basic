@@ -63,8 +63,8 @@ In Dart:
 ### More dart
 Dart
 - is strongly typed, type annotations are optional because Dart can infer types. 
-- supports generic types, like List<int>
-- supports top-level functions (such as main()), as well as functions tied to a class or object (static and instance methods, respectively).
+- supports generic types, like `List<int>`
+- supports top-level functions (such as `main()`), as well as functions tied to a class or object (static and instance methods, respectively).
 - supports top-level variables, as well as variables tied to a class or object (static and instance variables). 
 
 - (Unlike Java) Dart doesn’t have the keywords public, protected, and private. If an identifier starts with an underscore (_), it’s private to its library. For details, see Libraries and visibility.
@@ -131,13 +131,13 @@ lineCount = 2; //not allowed, as lineCount is final.
 ---
 ### Const values
 You can also use it to create constant values
-```dart
-// Note: [] creates an empty list.
+
+```dart 
+// Important!: [] creates an empty list.
 // const [] creates an empty, immutable list (EIL).
 var foo = const []; // foo is currently an EIL.
 final bar = const []; // bar will always be an EIL.
 const baz = const []; // baz is a compile-time constant EIL.
-```
 
 // You can change the value of a non-final, non-const variable,
 // even if it used to have a const value.
@@ -146,8 +146,7 @@ foo = [];
 // You can't change the value of a final or const variable.
 // bar = []; // Unhandled exception.
 // baz = []; // Unhandled exception.
----
-###
+```
 
 ---
 ### Types in dart
@@ -192,6 +191,7 @@ var s = r"In a raw string, even \n isn't special.";
 ---
 ### Lists in strings
 - Lists use zero-based indexing
+
 ```dart
 var list = [1, 2, 3];
 assert(list.length == 3);
@@ -291,8 +291,8 @@ print(String.fromCharCodes(input));
 A Symbol object represents an operator or identifier declared in a Dart program. 
   - Minification changes identifier names but not identifier symbols.
 Symbols are written as:
-  - #radix
-  - #bar
+  - `#radix`
+  - `#bar`
 
 Symbol literals are compile-time constants.
 

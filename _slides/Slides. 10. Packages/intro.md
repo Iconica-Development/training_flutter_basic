@@ -9,9 +9,11 @@ to the Flutter and Dart ecosystems
 ### Packages
 - Existing packages, for example
     - http: making network requests 
-    - fluro: custom navigation/route handling
+    - go_router: custom navigation/route handling
+    - riverpod: architecture, dependencies and state management
+    - flutter_hooks: enhancements for easier stateful widget usage.
     - url_launcher / battery: integration with device APIs 
-    - Firebase
+    - firebase_core: communication with firebase, alongside specific packages.
     - more..
 - Your custom developed packages
 

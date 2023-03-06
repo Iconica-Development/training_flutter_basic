@@ -14,11 +14,9 @@ Cross platform mobile development
 - Chapter 7. User Input and Validation
 - Chapter 8. Assets and Localisation
 - Chapter 9. JSON and Services
-- Chapter 10. Animation
-<!-- - Chapter 11. Platform Channels -->
+- Chapter 10. Theming
 - Chapter 11. Packages
 - Chapter 12. Testing
-<!-- - Chapter 14. New in Beta 3 -->
 
 ---
 ### Rules of engagement

@@ -66,12 +66,6 @@ Implementing the form
 
 ---
 ### Form Widget
-Result
-
-<img src="images/forms.png" height="500" />
-
----
-### Form Widget
 To validate form entries, use the _formKey...
 ```
  void submit() {
@@ -102,5 +96,4 @@ TextFormField(
     )
 ```
 
-
-// https://www.didierboelens.com/2018/04/hint-4-ensure-a-textfield-or-textformfield-is-visible-in-the-viewport-when-has-the-focus/
+https://www.didierboelens.com/2018/04/hint-4-ensure-a-textfield-or-textformfield-is-visible-in-the-viewport-when-has-the-focus/
