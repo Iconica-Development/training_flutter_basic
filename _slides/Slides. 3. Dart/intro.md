@@ -160,6 +160,7 @@ The Dart language has special support for:
 - runes (for expressing Unicode characters in a string)
 - symbols
 - functions
+- records
 
 ---
 ### Strings in Dart 
@@ -295,6 +296,31 @@ Symbols are written as:
   - `#bar`
 
 Symbol literals are compile-time constants.
+
+---
+### Records
+
+Records let you bundle multiple objects into a single object.
+
+- Anonymous
+- Immutable
+- Aggregate
+- Fixed Sized
+- Heterogeneous
+- Typed
+
+
+```
+var record = ('first', a: 2, b: true, 'last');
+```
+
+```
+// Record type annotation in a variable declaration:
+(String, int) record;
+
+// Initialize it with a record expression:
+record = ('A string', 123);
+```
 
 ---
 ### Functions
