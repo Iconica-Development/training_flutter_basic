@@ -1,7 +1,11 @@
-# Flutter Development Basics
+# Flutter basic training slides
 
-## Agenda
+These slides are used by Iconica trainers to give the Flutter basic training.
 
-### Day 1
+To create these slides http://lab.hakim.se/reveal-js is used.
+You can run them using these commands:
 
-1. --
+```sh
+npm install
+npm run
+```
