@@ -1,29 +1,22 @@
 {
-  "name": "polymer",
+  "name": "training_flutter_basic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "help": "node printhelp.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "lite-server -c bs-config.json",
-    "presentation": "lite-server -c bs-config.json",
-    "generatelabs": "pdfgenerator ./_labs",
-    "updateslides": "node updateslides.js",
-    "push": "node push.js",
-    "all": "npm run generatelabs && npm run push && npm run updateslides && npm run presentation"
+    "start": "lite-server -c bs-config.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JohnGorter/polymer.git"
+    "url": "git+https://github.com/Iconica-Development/training_flutter_basic.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JohnGorter/polymer/issues"
+    "url": "https://github.com/Iconica-Development/training_flutter_basic.git"
   },
-  "homepage": "https://github.com/JohnGorter/polymer#readme",
+  "homepage": "https://github.com/Iconica-Development/training_flutter_basic#readme",
   "dependencies": {
     "lite-server": "^2.2.0"
   }
