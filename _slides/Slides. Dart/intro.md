@@ -39,12 +39,12 @@ A simple main.dart file:
 
 ```dart
 // Define a function.
-printInteger(int aNumber) {
+void printInteger(int aNumber) {
   print('The number is $aNumber.'); // Print to console.
 }
 
 // This is where the app starts executing.
-main() {
+void main() {
   var number = 42; // Declare and initialize a variable.
   printInteger(number); // Call a function.
 }
@@ -358,7 +358,7 @@ enableFlags(bold: true, hidden: false);
 When defining a function, use {param1, param2, …} to specify named parameters:
 ```dart
 /// Sets the [bold] and [hidden] flags ...
-void enableFlags({bool bold, bool hidden}) {
+void enableFlags({bool? bold, bool? hidden}) {
   // ...
 }
 ```
@@ -367,7 +367,7 @@ void enableFlags({bool bold, bool hidden}) {
 ### Optional positional parameters
 Wrapping parameters in [] marks them optional positional:
 ```dart
-String say(String from, String msg, [String device]) {
+String say(String from, String msg, [String? device]) {
   var result = '$from says $msg';
   if (device != null) {
     result = '$result with a $device';

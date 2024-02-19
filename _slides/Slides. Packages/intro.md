@@ -38,10 +38,10 @@ Add a corresponding import statement in your Dart code.
 Packages can contain several kinds of content:
 
 - Dart packages: General packages that may contain Flutter specific functionality and thus have a dependency on the Flutter framework
-    - fluro package
+    - provider package
 
 - Plugin packages: Specialized Dart package with API implementation for Android and/or iOS 
-    - battery plugin package
+    - camera package
 
 ---
 ### Developing packages
