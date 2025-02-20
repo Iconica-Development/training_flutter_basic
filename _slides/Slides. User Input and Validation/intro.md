@@ -1,4 +1,4 @@
-# Forms
+# User Input and Validation
 
 ---
 ### Form Widget
@@ -33,35 +33,35 @@ Implementing the form
 ```
  children: <Widget>[
     TextFormField(
-    keyboardType: TextInputType.emailAddress, // Use email input type for emails.
-    decoration: InputDecoration(
-        hintText: 'you@example.com',
-        labelText: 'E-mail Address'
-    )
+      keyboardType: TextInputType.emailAddress, // Use email input type for emails.
+      decoration: InputDecoration(
+          hintText: 'you@example.com',
+          labelText: 'E-mail Address'
+      )
     ),
     TextFormField(
-    obscureText: true, // Use secure text for passwords.
-    decoration: InputDecoration(
-        hintText: 'Password',
-        labelText: 'Enter your password'
-    )
+      obscureText: true, // Use secure text for passwords.
+      decoration: InputDecoration(
+          hintText: 'Password',
+          labelText: 'Enter your password'
+      )
     ),
     Container(
         width: screenSize.width,
         child: RaisedButton(
             child: Text(
-            'Login',
-            style: TextStyle(
-                color: Colors.white
-            ),
+              'Login',
+              style: TextStyle(
+                  color: Colors.white
+              ),
             ),
             onPressed: () => null,
             color: Colors.blue,
+          ),
+          margin: EdgeInsets.only(
+              top: 20.0
+          ),
         ),
-        margin: EdgeInsets.only(
-            top: 20.0
-        ),
-        )
     ]
 ```
 
